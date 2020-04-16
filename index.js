@@ -1,7 +1,7 @@
 module.exports = {
-  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2019,
+    parser: 'babel-eslint',
+    ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
@@ -24,7 +24,7 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'no-console': 1,
-    "no-unused-vars": 1,
-    "quotes": [2, "single"]
-  }
+    'no-unused-vars': 1,
+    quotes: [2, 'single'],
+  },
 }
