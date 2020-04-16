@@ -13,6 +13,9 @@ module.exports = {
     es6: true,
   },
   extends: [
+    'plugin:promise/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
     'plugin:prettier/recommended',
     'eslint:recommended',
     'eslint-config-airbnb-base',
