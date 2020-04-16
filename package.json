@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-metamo",
+  "version": "0.0.1",
+  "description": "ESLint shareable config file for metamo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint"
+  },
+  "repository": "meta-mo/playground.git",
+  "keywords": [
+    "eslint",
+    "prettier"
+  ],
+  "author": "ivgtr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meta-mo/playground/issues"
+  },
+  "homepage": "https://github.com/meta-mo/playground",
+
+}
