@@ -4,13 +4,13 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
+      experimentalObjectRestSpread: true
+    }
   },
   env: {
     browser: true,
     node: true,
-    es6: true,
+    es6: true
   },
   extends: [
     'plugin:promise/recommended',
@@ -19,12 +19,14 @@ module.exports = {
     'plugin:prettier/recommended',
     'eslint:recommended',
     'eslint-config-airbnb-base',
-    'prettier',
+    'prettier'
   ],
   plugins: ['prettier'],
   rules: {
     'no-console': 1,
     'no-unused-vars': 1,
     quotes: [2, 'single'],
-  },
+    'no-var': 2,
+    'prefer-const': 2
+  }
 }
