@@ -1,5 +1,7 @@
 # eslint-config-metamo
 
+###### ※ルール検討中
+
 ## Install
 
 ```
@@ -28,7 +30,7 @@ npm install -D eslint-config-metamo eslint
 
 ```json
 {
-  "extends": ["eslint-config-metamo/vue"]
+  "extends": ["eslint-config-metamo","eslint-config-metamo/vue"]
 }
 ```
 
@@ -36,6 +38,6 @@ npm install -D eslint-config-metamo eslint
 
 ```json
 {
-  "extends": ["eslint-config-metamo/vuets"]
+  "extends": ["eslint-config-metamo","eslint-config-metamo/vuets"]
 }
 ```
