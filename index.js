@@ -13,6 +13,7 @@ module.exports = {
     es6: true
   },
   extends: [
+    './meta.js',
     'plugin:promise/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
@@ -22,11 +23,5 @@ module.exports = {
     'prettier'
   ],
   plugins: ['prettier'],
-  rules: {
-    'no-console': 1,
-    'no-unused-vars': 1,
-    quotes: [2, 'single'],
-    'no-var': 2,
-    'prefer-const': 2
-  }
+  rules: {}
 }
