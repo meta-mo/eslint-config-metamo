@@ -13,14 +13,14 @@ module.exports = {
     es6: true
   },
   extends: [
-    './meta.js',
     'plugin:promise/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:prettier/recommended',
     'eslint:recommended',
     'eslint-config-airbnb-base',
-    'prettier'
+    'prettier',
+    './meta.js'
   ],
   plugins: ['prettier'],
   rules: {}
