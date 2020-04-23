@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    './meta.js',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint'
   ],

@@ -3,7 +3,12 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['eslint:recommended', 'plugin:vue/recommended', '@vue/prettier'],
+  extends: [
+    './meta.js',
+    'eslint:recommended',
+    'plugin:vue/recommended',
+    '@vue/prettier'
+  ],
   parserOptions: {
     ecmaVersion: 2020,
     parser: 'babel-eslint'

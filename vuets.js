@@ -4,6 +4,7 @@ module.exports = {
     node: true
   },
   extends: [
+    './meta.js',
     'plugin:vue/essential',
     'eslint:recommended',
     '@vue/typescript/recommended',
