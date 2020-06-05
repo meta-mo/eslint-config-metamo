@@ -24,6 +24,7 @@
     "typescript": "3.8.3"
   },
   "dependencies": {
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
     "@typescript-eslint/parser": "^2.28.0",
     "@vue/eslint-config-prettier": "^6.0.0",
