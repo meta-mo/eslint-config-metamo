@@ -12,5 +12,15 @@ module.exports = {
     sourceType: 'module',
     jsx: true,
     project: 'tsconfig.json'
+  },
+  rules: {
+    'import/extensions': ['.js', '.jsx', '.json', '.ts', '.tsx']
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+      }
+    }
   }
 }
