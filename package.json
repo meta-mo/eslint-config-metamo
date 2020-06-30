@@ -21,7 +21,7 @@
     "eslint": "^6.8.0",
     "prettier": "^2.0.4",
     "prettier-config-metamo": "0.0.3",
-    "typescript": "3.8.3"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "@nuxtjs/eslint-config-typescript": "^2.0.0",

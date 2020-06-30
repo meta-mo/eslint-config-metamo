@@ -14,7 +14,16 @@ module.exports = {
     project: 'tsconfig.json'
   },
   rules: {
-    'import/extensions': ['.js', '.jsx', '.json', '.ts', '.tsx']
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ]
   },
   settings: {
     'import/resolver': {
