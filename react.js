@@ -15,11 +15,14 @@ module.exports = {
     react: {
       version: 'detect'
     },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
-      }
-    }
+    'import/resolver': [
+      {
+        node: {
+          extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+        }
+      },
+      'webpack'
+    ]
   },
   plugins: ['react', 'react-hooks', 'import', '@typescript-eslint'],
   rules: {
