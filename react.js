@@ -43,6 +43,14 @@ module.exports = {
         ts: 'never',
         tsx: 'never'
       }
+    ],
+    // 環境構築レベルでもimportにdevDependenciesは辛い
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: false,
+        optionalDependencies: false
+      }
     ]
   }
 }
