@@ -21,7 +21,7 @@ module.exports = {
       }
     }
   },
-  plugins: ['react', 'react-hooks'],
+  plugins: ['react', 'react-hooks', 'import'],
   rules: {
     // 最適化すれば変わらないため無効。本質ではない。
     // 'react/prefer-stateless-function': 2,
@@ -44,11 +44,26 @@ module.exports = {
         tsx: 'never'
       }
     ],
-    // 環境構築レベルでもimportにdevDependenciesは辛い
+    // 環境構築レベルでもimportにdevDependenciesは辛いので外す
     'import/no-extraneous-dependencies': [
-      'error',
+      2,
       {
-        devDependencies: false,
+        devDependencies: [
+          'test/**',
+          'tests/**',
+          'spec/**',
+          '**/__tests__/**',
+          '**/__mocks__/**',
+          'test.{js,jsx,ts,tsx}',
+          'test-*.{js,jsx,ts,tsx}',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/webpack.config.{js,ts}',
+          '**/webpack.config.*.{js,ts}',
+          '**/jest.config.js',
+          '**/jest.setup.js',
+          '**/rollup.config.js',
+          '**/rollup.config.*.js'
+        ],
         optionalDependencies: false
       }
     ]
