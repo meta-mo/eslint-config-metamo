@@ -9,6 +9,16 @@ module.exports = {
     'no-unused-vars': 1,
     quotes: [2, 'single'],
     'no-var': 2,
-    'prefer-const': 2
+    'prefer-const': 2,
+    'prettier/prettier': [
+      'warn',
+      {
+        useTabs: false,
+        tabWidth: 2,
+        semi: false,
+        singleQuote: true,
+        trailingComma: 'none'
+      }
+    ]
   }
 }

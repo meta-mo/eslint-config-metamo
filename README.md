@@ -5,7 +5,7 @@
 ## Install
 
 ```
-npm install -D eslint-config-metamo eslint
+npm install -D eslint-config-metamo eslint prettier
 ```
 
 ## Usage
@@ -22,15 +22,7 @@ npm install -D eslint-config-metamo eslint
 
 ```json
 {
-  "extends": ["eslint-config-metamo","eslint-config-metamo/typescript"]
-}
-```
-
-### Vue
-
-```json
-{
-  "extends": ["eslint-config-metamo/vue"]
+  "extends": ["eslint-config-metamo","eslint-config-metamo/ts"]
 }
 ```
 
@@ -38,6 +30,22 @@ npm install -D eslint-config-metamo eslint
 
 ```json
 {
-  "extends": ["eslint-config-metamo/vuets"]
+  "extends": ["eslint-config-metamo/vue"]
+}
+```
+
+### Nuxt + TypeScript
+
+```json
+{
+  "extends": ["eslint-config-metamo/nuxt"]
+}
+```
+
+### React + TypeScript
+
+```json
+{
+  "extends": ["eslint-config-metamo/react"]
 }
 ```

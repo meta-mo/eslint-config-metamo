@@ -13,8 +13,8 @@ module.exports = {
     es6: true
   },
   extends: [
+    'plugin:eslint-comments/recommended',
     'plugin:promise/recommended',
-    'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:prettier/recommended',
     'eslint:recommended',
