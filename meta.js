@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     node: true
   },
+  plugins: ['prettier'],
   rules: {
     'no-console': 1,
     yoda: 2,
