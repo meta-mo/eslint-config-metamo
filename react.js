@@ -1,5 +1,7 @@
 module.exports = {
   extends: [
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'prettier',
     'prettier/react',
@@ -12,6 +14,11 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+      }
     }
   },
   plugins: ['react', 'react-hooks'],
@@ -26,6 +33,16 @@ module.exports = {
     // hooks
     'react-hooks/rules-of-hooks': 'error',
     // 型を使う
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ]
   }
 }
