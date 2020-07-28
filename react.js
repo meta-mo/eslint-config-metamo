@@ -20,7 +20,6 @@ module.exports = {
         node: {
           extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
         },
-
         typescript: {}
       },
       'webpack'
@@ -39,6 +38,8 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     // 型を使う
     'react/prop-types': 'off',
+    // 親を指定した相対パスをエラーに(aliasを使うように)
+    'import/no-relative-parent-imports': 'error',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -72,6 +73,7 @@ module.exports = {
           'test-*.{js,jsx,ts,tsx}',
           '**/*.test.{js,jsx,ts,tsx}',
           '**/*.config.{js,ts}',
+          '**/next.config.{js,ts}',
           '**/webpack.config.{js,ts}',
           '**/webpack.config.*.{js,ts}',
           '**/jest.config.js',
