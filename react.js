@@ -96,6 +96,8 @@ module.exports = {
         'test.{js,jsx,ts,tsx}',
         'test-*.{js,jsx,ts,tsx}',
         '**/*.test.{js,jsx,ts,tsx}',
+        '**/*.config.{js,ts}',
+        '**/next.config.{js,ts}',
         '**/webpack.config.{js,ts}',
         '**/webpack.config.*.{js,ts}',
         '**/jest.config.js',
