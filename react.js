@@ -24,7 +24,7 @@ module.exports = {
       'webpack'
     ]
   },
-  plugins: ['react', 'react-hooks', 'import', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', 'import', '@typescript-eslint', 'jsx-a11y'],
   rules: {
     // 最適化すれば変わらないため無効。本質ではない。
     // 'react/prefer-stateless-function': 2,
@@ -45,6 +45,15 @@ module.exports = {
         jsx: 'never',
         ts: 'never',
         tsx: 'never'
+      }
+    ],
+    // Next.jsにてLinkコンポネートの指定と衝突するものは除外
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton']
       }
     ],
     // 環境構築レベルでもimportにdevDependenciesは辛いので外す
