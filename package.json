@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-metamo",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "ESLint shareable config file for metamo",
   "main": "index.js",
   "scripts": {
