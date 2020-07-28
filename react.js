@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   extends: [
     'airbnb',
@@ -20,7 +22,10 @@ module.exports = {
         node: {
           extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
         },
-        typescript: {}
+        typescript: {},
+        alias: {
+          map: [['~', path.join(__dirname, '/src')]]
+        }
       },
       'webpack'
     ]
