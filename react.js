@@ -44,7 +44,7 @@ module.exports = {
     // 型を使う
     'react/prop-types': 'off',
     // 親を指定した相対パスをエラーに(aliasを使うように)
-    'import/no-relative-parent-imports': 'error',
+    // 'import/no-relative-parent-imports': 'error', aliasがうまく設定できないので無効にして相対パスを使う
     'import/extensions': [
       'error',
       'ignorePackages',
