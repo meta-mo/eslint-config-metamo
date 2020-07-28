@@ -1,6 +1,9 @@
 # eslint-config-metamo
 
-###### ※ルール検討中
+###### ESlint + Prettier のルールセット
+ちゃんと使える: React  
+使える: Vue, Nuxt  
+不明: node, TS
 
 ## Install
 
