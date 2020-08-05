@@ -24,7 +24,10 @@ module.exports = {
         tsx: 'never'
       }
     ],
-    '@typescript-eslint/member-delimiter-style': 'off'
+    '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/type-annotation-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': 'off',
+    '@typescript-eslint/semi': 'off'
   },
   settings: {
     'import/resolver': {

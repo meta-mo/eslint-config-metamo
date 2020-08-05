@@ -32,6 +32,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks', 'import', '@typescript-eslint', 'jsx-a11y'],
   rules: {
+    // 参考:https://github.com/akameco/eslint-config-precure
     // 最適化すれば変わらないため無効。本質ではない。
     // 'react/prefer-stateless-function': 2,
     'react/jsx-boolean-value': 2,
@@ -43,6 +44,28 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     // 型を使う
     'react/prop-types': 'off',
+    // prettierに準拠
+    '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/type-annotation-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': 'off',
+    '@typescript-eslint/semi': 'off',
+    // 挙動が怪しいのでOFFにする
+    '@typescript-eslint/promise-function-async': 'off',
+    '@typescript-eslint/no-require-imports': 'error',
+    '@typescript-eslint/no-for-in-array': 'error',
+    '@typescript-eslint/require-array-sort-compare': 'error',
+    '@typescript-eslint/prefer-function-type': 'error',
+    '@typescript-eslint/no-unnecessary-qualifier': 'error',
+    '@typescript-eslint/unified-signatures': 'error',
+    '@typescript-eslint/prefer-for-of': 'error',
+    '@typescript-eslint/prefer-includes': 'error',
+    '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+    // type-checkに時間がかかるのでoff
+    '@typescript-eslint/await-thenable': 'off',
+    '@typescript-eslint/no-extra-parens': 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    // arr.length - 1 === index のパターンがある
+    '@typescript-eslint/no-magic-numbers': 'off',
     // 親を指定した相対パスをエラーに(aliasを使うように)
     // 'import/no-relative-parent-imports': 'error', aliasがうまく設定できないので無効にして相対パスを使う
     'import/extensions': [
