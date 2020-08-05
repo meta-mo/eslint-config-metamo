@@ -49,17 +49,6 @@ module.exports = {
     '@typescript-eslint/type-annotation-spacing': 'off',
     '@typescript-eslint/func-call-spacing': 'off',
     '@typescript-eslint/semi': 'off',
-    // 挙動が怪しいのでOFFにする
-    '@typescript-eslint/promise-function-async': 'off',
-    '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-for-in-array': 'error',
-    '@typescript-eslint/require-array-sort-compare': 'error',
-    '@typescript-eslint/prefer-function-type': 'error',
-    '@typescript-eslint/no-unnecessary-qualifier': 'error',
-    '@typescript-eslint/unified-signatures': 'error',
-    '@typescript-eslint/prefer-for-of': 'error',
-    '@typescript-eslint/prefer-includes': 'error',
-    '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     // type-checkに時間がかかるのでoff
     '@typescript-eslint/await-thenable': 'off',
     '@typescript-eslint/no-extra-parens': 'off',
