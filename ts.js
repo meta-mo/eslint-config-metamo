@@ -23,7 +23,8 @@ module.exports = {
         ts: 'never',
         tsx: 'never'
       }
-    ]
+    ],
+    '@typescript-eslint/member-delimiter-style': 'off'
   },
   settings: {
     'import/resolver': {
